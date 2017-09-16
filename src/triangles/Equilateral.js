@@ -1,24 +1,27 @@
 import React from 'react';
-import { Triangle } from '../components/Triangle';
+import { Text } from 'designSystem';
+import { Triangle, Slide } from 'components';
 
-const Equilateral = ({ onLeft, onRight }) => (
-  <article className="flex-l justify-center items-start w-100">
-    <div className="flex-auto">
-      <Triangle
-        className="mw6 mr6-l"
-        polarCoords={[[30, -120], [30, -210], [30, -330]]}
-      />
-    </div>
-    <div className="measure">
-      <h2 className="mt0">Equilateral Triangle</h2>
-      <p className="lh-copy">
-        A triangle that has all sides of the same length. It is also a regular
-        polygon with all angles measuring <code>60°</code>. Equilateral
-        triangles is also equiangular; that is, all three internal angles are
-        also congruent to each other and are each <code>60°</code>.
-      </p>
-    </div>
-  </article>
+export const Equilateral = props => (
+  <Slide title="Equilateral Triangle" {...props}>
+    {{
+      media: (
+        <Triangle
+          coords={[
+            [30, 4.01923788646684],
+            [4.019237886466843, 45],
+            [55.98076211353315, 45.000000000000014],
+          ]}
+        />
+      ),
+      body: (
+        <Text>
+          A triangle that has all sides of the same length. It is also a regular
+          polygon with all angles measuring <code>60°</code>. Equilateral
+          triangles is also equiangular; that is, all three internal angles are
+          also congruent to each other and are each <code>60°</code>.
+        </Text>
+      ),
+    }}
+  </Slide>
 );
-
-export default Equilateral;

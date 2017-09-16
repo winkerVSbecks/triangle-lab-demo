@@ -11,7 +11,7 @@ const IntroContainer = Block.extend`
 export const Intro = props => (
   <IntroContainer pv={6} {...props}>
     <Measure>
-      <Text mb={4}>A catalogue of triangles</Text>
+      <Text mb={4}>A Catalogue of Triangles</Text>
     </Measure>
     <Hero width={1} />
   </IntroContainer>

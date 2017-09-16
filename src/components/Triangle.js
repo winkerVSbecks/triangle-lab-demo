@@ -1,13 +1,14 @@
 import React from 'react';
+import { SVG } from 'designSystem';
 
-export const Triangle = ({
-  w,
-  h,
-  coords = [[20, -90], [20, -210], [20, -330]],
-  polarCoords,
-  ...props
-}) => (
-  <svg
+const TriangleSVG = SVG.extend`
+  width: 100%;
+  height: auto;
+  max-width: 32rem;
+`;
+
+export const Triangle = ({ coords, polarCoords, ...props }) => (
+  <TriangleSVG
     viewBox="0 0 60 60"
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
@@ -17,18 +18,16 @@ export const Triangle = ({
     strokeLinejoin="round"
     {...props}
   >
-    {polarCoords ? (
-      coordsToPath(polarToCartesian([30, 30], polarCoords))
-    ) : (
-      coordsToPath(coords)
-    )}
-  </svg>
+    {polarCoords
+      ? coordsToPath(polarToCartesian([30, 30], polarCoords))
+      : coordsToPath(coords)}
+  </TriangleSVG>
 );
 
 const degToRadian = angle => angle * Math.PI / 180;
 
 function randomColors() {
-  let colors = ['#fe565d', '#ffd23f' /*'#FFB238 fff157'*/, '#1b67ff'];
+  let colors = ['#3e6bd2', '#ff595e', '#fefefe'];
 
   let currentIndex = colors.length;
   let temporaryValue;
@@ -47,6 +46,12 @@ function randomColors() {
 }
 
 function polarToCartesian([x, y], coords) {
+  console.log(
+    coords.map(([r, t]) => [r, degToRadian(t)]),
+    coords
+      .map(([r, t]) => [r, degToRadian(t)])
+      .map(([r, t]) => [x + r * Math.cos(t), y + r * Math.sin(t)]),
+  );
   return coords
     .map(([r, t]) => [r, degToRadian(t)])
     .map(([r, t]) => [x + r * Math.cos(t), y + r * Math.sin(t)]);

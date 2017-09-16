@@ -8,8 +8,7 @@ import {
   Text,
   Cover,
 } from 'designSystem';
-import { Navbar } from './components/Navbar';
-import { Intro } from './components/Intro';
+import { Navbar, Intro } from 'components';
 import { dec, inc, handleKeyDown } from './handlers';
 import triangles from './triangles';
 
