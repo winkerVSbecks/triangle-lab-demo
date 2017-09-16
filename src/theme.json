@@ -1,0 +1,14 @@
+{
+  "fonts": ["Menlo, monospace"],
+  "space": [0, 4, 8, 16, 32, 64, 128, 256],
+  "fontSizes": [12, 14, 16, 20, 24, 32, 48, 64, 72, 96],
+  "colors": {
+    "": "#000807",
+    "near-black": "#363636",
+    "near-white": "#fefefe",
+    "blue": "#3e6bd2",
+    "beige": "#f8d3c1",
+    "green": "#17b890",
+    "red": "#ff595e"
+  }
+}

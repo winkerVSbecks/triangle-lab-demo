@@ -1,0 +1,228 @@
+{
+  "name": "triangle-lab",
+  "library": "styled-components",
+  "components": [
+    {
+      "name": "Heading",
+      "type": "h1",
+      "props": {
+        "fontSize": null,
+        "m": 0,
+        "color": "blue"
+      },
+      "style": {
+        "fontWeight": "bold",
+        "lineHeight": 1.25
+      },
+      "examples": [
+        {
+          "children": "Heading"
+        }
+      ]
+    },
+    {
+      "name": "Text",
+      "type": "p",
+      "props": {
+        "fontSize": 2,
+        "color": "blue"
+      },
+      "style": {
+        "lineHeight": "1.5"
+      },
+      "examples": [
+        {
+          "children": "A triangle with one interior angle measuring more than 90°"
+        }
+      ]
+    },
+    {
+      "name": "IconButton",
+      "type": "button",
+      "props": {
+        "bg": "transparent",
+        "pl": 3,
+        "pr": 3,
+        "pt": 3,
+        "pb": 3,
+        "color": "beige",
+        "fontSize": 2
+      },
+      "style": {
+        "display": "inline-flex",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "borderWidth": "0px",
+        "borderStyle": "solid",
+        "cursor": "pointer"
+      },
+      "examples": [
+        {
+          "children": "➡️"
+        },
+        {
+          "children": "⬅️️"
+        },
+        {
+          "children": "💡 click"
+        }
+      ]
+    },
+    {
+      "name": "Block",
+      "type": "div",
+      "props": {
+        "color": "blue"
+      },
+      "style": {},
+      "examples": [
+        {
+          "p": 3,
+          "bg": "beige",
+          "color": "blue",
+          "children": "Hello!"
+        },
+        {
+          "p": 4,
+          "bg": "blue",
+          "color": "beige",
+          "children": "Big Hello!"
+        }
+      ]
+    },
+    {
+      "name": "Toolbar",
+      "type": "div",
+      "props": {
+        "pl": 3,
+        "pr": 3,
+        "color": "beige",
+        "bg": "blue"
+      },
+      "style": {
+        "display": "flex",
+        "minHeight": "64px",
+        "alignItems": "center"
+      },
+      "examples": [
+        {
+          "children": "T R I A N G L E S"
+        }
+      ]
+    },
+    {
+      "name": "Spacer",
+      "type": "div",
+      "props": {},
+      "style": {
+        "flex": "1 1 auto",
+        "minWidth": 0,
+        "minHeight": 0
+      },
+      "examples": [
+        {}
+      ]
+    },
+    {
+      "name": "SVG",
+      "type": "svg",
+      "props": {
+        "color": "inherit"
+      },
+      "style": {
+        "verticalAlign": "middle",
+        "display": "inline",
+        "width": "16px",
+        "height": "16px"
+      },
+      "examples": [
+        {}
+      ]
+    },
+    {
+      "name": "Container",
+      "type": "div",
+      "props": {
+        "bg": "beige",
+        "color": "blue"
+      },
+      "style": {
+        "fontFamily": "Menlo, monospace"
+      },
+      "examples": [
+        {}
+      ]
+    },
+    {
+      "name": "Main",
+      "type": "main",
+      "props": {},
+      "style": {
+        "maxWidth": "64rem",
+        "display": "flex",
+        "alignItems": "center",
+        "flex": "1 1 auto"
+      }
+    },
+    {
+      "name": "Measure",
+      "type": "div",
+      "props": {},
+      "style": {
+        "maxWidth": "30em"
+      },
+      "examples": [
+        {}
+      ]
+    },
+    {
+      "name": "Link",
+      "type": "a",
+      "props": {
+        "color": "blue"
+      },
+      "style": {
+        "transition": "opacity .15s ease-in",
+        "&:hover": {
+          "backfaceVisibility": "hidden",
+          "opacity": 0.5
+        }
+      },
+      "examples": [
+        {
+          "children": "foo.com",
+          "href": "foo.com"
+        }
+      ]
+    },
+    {
+      "name": "Footer",
+      "type": "footer",
+      "props": {
+        "bg": "beige",
+        "color": "blue"
+      },
+      "style": {
+        "height": "4rem",
+        "display": "flex",
+        "alignItems": "center"
+      },
+      "examples": [
+        {}
+      ]
+    },
+    {
+      "name": "Cover",
+      "type": "div",
+      "props": {},
+      "style": {
+        "display": "flex",
+        "flexDirection": "column",
+        "height": "100vh"
+      },
+      "examples": [
+        {}
+      ]
+    }
+  ]
+}
